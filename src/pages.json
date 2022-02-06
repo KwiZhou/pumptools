@@ -1,16 +1,102 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
-			"path": "pages/index/index",
-			"style": {
-				"navigationBarTitleText": "uni-app"
-			}
-		}
-	],
+            "path" : "pages/home/home",
+            "style" :                                                                                    
+            {
+                //"navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/selection/selection",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "选型",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/tools/tools",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "小工具",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/myself/myself",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "我的",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/selection/selection_calculator/selection_calculator",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "components/panel/panel",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
+		"navigationBarTitleText": "pumptools",
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+	    "list": [
+	      {
+	        "pagePath": "pages/home/home",
+	        "text": "首页",
+			 "iconPath": "static/tabBar_icon/unhome_tabBar.png",
+			 "selectedIconPath":"static/tabBar_icon/home_tabBar.png"
+	      },
+	      {
+	        "pagePath": "pages/selection/selection",
+	        "text": "选型",
+			 "iconPath": "static/tabBar_icon/unselection_tabBar.png",
+			  "selectedIconPath":"static/tabBar_icon/selection_tabBar.png"
+	      },
+	      {
+	        "pagePath": "pages/tools/tools",
+	        "text": "工具",
+			 "iconPath": "static/tabBar_icon/untools_tabBar.png",
+			  "selectedIconPath":"static/tabBar_icon/tools_tabBar.png"
+	      },
+	      {
+	        "pagePath": "pages/myself/myself",
+	        "text": "我的",
+			 "iconPath": "static/tabBar_icon/unmyself_tabBar.png",
+			 "selectedIconPath":"static/tabBar_icon/myself_tabBar.png"
+	      }
+	    ]
+	  },
+	"condition" : { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [
+			{
+				"name": "", //模式名称
+				"path": "", //启动页面，必选
+				"query": "" //启动参数，在页面的onLoad函数里面得到
+			}
+		]
 	}
 }

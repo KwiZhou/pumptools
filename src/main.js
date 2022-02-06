@@ -1,6 +1,9 @@
 import Vue from 'vue'
 import App from './App'
-
+//引入icofont
+import  './assets/iconfont/iconfont.css'
+//注册全局组件
+import panel from './components/panel/panel'
 Vue.config.productionTip = false
 
 App.mpType = 'app'
