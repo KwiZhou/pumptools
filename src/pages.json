@@ -54,6 +54,15 @@
             }
             
         }
+        ,{
+            "path" : "pages/tools/tools_Zd/tools_Zd",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
