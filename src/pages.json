@@ -45,15 +45,7 @@
             }
             
         }
-        ,{
-            "path" : "components/panel/panel",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
-            
-        }
+        
         ,{
             "path" : "pages/tools/tools_Zd/tools_Zd",
             "style" :                                                                                    

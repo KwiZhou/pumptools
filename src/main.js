@@ -4,7 +4,8 @@ import App from './App'
 import  './assets/iconfont/iconfont.css'
 //注册全局组件
 import panel from './components/panel/panel'
-import toolsA from './components/toolsA/toolsA'
+import toolsA from './components/toolsA/toolsA' 
+import toolsAzdChart from './components/toolsAzdChart/toolsAzdChart'
 Vue.config.productionTip = false
 
 App.mpType = 'app'
