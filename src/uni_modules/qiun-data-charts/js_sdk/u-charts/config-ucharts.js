@@ -125,7 +125,7 @@ const cfu = {
     "fontSize": 13,
     "fontColor": "#666666",
 	
-   "enableScroll": true,
+   "enableScroll": false,
     "touchMoveLimit": 60,
     "enableMarkLine": false,
     "dataLabel": false,

@@ -1,17 +1,28 @@
 <script>
 	export default {
+		data(){
+			return {
+				
+			}
+		},
 		onLaunch: function() {
-			console.log('App Launch')
+			
+			
 		},
 		onShow: function() {
-			console.log('App Show')
+
 		},
 		onHide: function() {
-			console.log('App Hide')
+		
+		},
+		globalData:{
+			//计算器页面的可用屏幕尺寸，由toolsZd传过来
+			pageHeight1:''
 		}
+		
 	}
 </script>
 
-<style>
-	/*每个页面公共css */
+<style >
+	
 </style>

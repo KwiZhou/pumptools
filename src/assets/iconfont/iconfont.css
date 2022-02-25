@@ -1,79 +1,98 @@
 @font-face {
-  font-family: "iconfont"; /* Project id 3133399 */
-  src: url('iconfont.woff2?t=1643551304400') format('woff2'),
-       url('iconfont.woff?t=1643551304400') format('woff'),
-       url('iconfont.ttf?t=1643551304400') format('truetype');
+	font-family: "iconfont";
+	/* Project id 3133399 */
+	src: url('iconfont.woff2?t=1643551304400') format('woff2'),
+		url('iconfont.woff?t=1643551304400') format('woff'),
+		url('iconfont.ttf?t=1643551304400') format('truetype');
 }
 
 .iconfont {
-  font-family: "iconfont" !important;
-  font-size: 16px;
-  font-style: normal;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	font-family: "iconfont" !important;
+	font-size: 16px;
+	font-style: normal;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 .icon-geishuiguandao:before {
-  content: "\e601";font-size: 100rpx;
+	content: "\e601";
+	font-size: 100rpx;
 }
 
 .icon-ziyuan:before {
-  content: "\e61a";font-size: 100rpx;
+	content: "\e61a";
+	font-size: 100rpx;
 }
 
 .icon-beng:before {
-  content: "\e620";font-size: 100rpx;
+	content: "\e620";
+	font-size: 100rpx;
 }
 
 .icon-bengzhan:before {
-  content: "\e62e";font-size: 100rpx;
+	content: "\e62e";
+	font-size: 100rpx;
 }
 
 .icon-jiexicanshu:before {
-  content: "\e60c";
-  font-size: 100rpx;
+	content: "\e60c";
+	font-size: 100rpx;
+	color: rgba(107, 200, 243, 0.747);
 }
 
 .icon-daochushuju:before {
-  content: "\e660";font-size: 100rpx;
+	content: "\e660";
+	font-size: 100rpx;
+
 }
 
 .icon-jisuanqi:before {
-  content: "\e627";font-size: 100rpx;
+	content: "\e627";
+	font-size: 100rpx;
+	color: rgba(107, 200, 243, 0.747);
 }
 
 .icon-yucepinggu:before {
-  content: "\e60e";font-size: 100rpx;
+	content: "\e60e";
+	font-size: 100rpx;
+
 }
 
 .icon-sanwei:before {
-  content: "\e625";font-size: 100rpx;
+	content: "\e625";
+	font-size: 100rpx;
 }
 
 .icon-qianshuibeng-copy:before {
-  content: "\e600";font-size: 100rpx;
+	content: "\e600";
+	font-size: 100rpx;
+
 }
 
 .icon-xiaofangbengfang:before {
-  content: "\e614";font-size: 100rpx;
+	content: "\e614";
+	font-size: 100rpx;
+	color: rgba(253, 146, 164, 0.781);
 }
 
 .icon-bengzhan1:before {
-  content: "\e61f";font-size: 100rpx;
+	content: "\e61f";
+	font-size: 100rpx;
+	color: rgba(61, 155, 17, 0.712);
 }
 
 .icon-a-Buy_shoppingcart_selected:before {
-  content: "\e626";font-size: 100rpx;
+	content: "\e626";
+	font-size: 100rpx;
 }
 
 .icon-jiance-fuzaizhendong:before {
-  content: "\e60f";
-  font-size: 100rpx;
-  color:rgba(185, 60, 60, 0.74);
+	content: "\e60f";
+	font-size: 100rpx;
+	color: rgba(185, 60, 60, 0.74);
 }
 
 .icon-hot:before {
-  content: "\e661";
-  font-size: 100rpx;
+	content: "\e661";
+	font-size: 100rpx;
 }
-

@@ -11,7 +11,7 @@
 					</text>
 				</template>
 			</panel>	
-			<panel >
+			<panel v-bind:url="item[1].url">
 				<template #toolsA_icon>
 					<span :class="item[1].iconclass"></span>
 				</template>
@@ -41,7 +41,7 @@
 				    child_id: 2,
 				    name: "性能参数",
 				    iconclass: "iconfont icon-jiexicanshu",
-				    url: "../three_xncs/three_xncs",
+				    url: "../../pages/tools/tools_Calculator/tools_Calculator",
 				  }],
 				  [{
 				    child_id: 3,

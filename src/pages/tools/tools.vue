@@ -38,6 +38,7 @@ export default {
       curIndex: 0,
     };
   },
+ 
   methods: {
 	  switchRightTab(e){
 		  this.curNav=e
