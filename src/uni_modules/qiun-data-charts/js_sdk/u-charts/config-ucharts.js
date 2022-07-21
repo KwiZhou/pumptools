@@ -1,20 +1,3 @@
-/*
- * uCharts®
- * 高性能跨平台图表库，支持H5、APP、小程序（微信/支付宝/百度/头条/QQ/360）、Vue、Taro等支持canvas的框架平台
- * Copyright (c) 2021 QIUN®秋云 https://www.ucharts.cn All rights reserved.
- * Licensed ( http://www.apache.org/licenses/LICENSE-2.0 )
- * 复制使用请保留本段注释，感谢支持开源！
- * 
- * uCharts®官方网站
- * https://www.uCharts.cn
- * 
- * 开源地址:
- * https://gitee.com/uCharts/uCharts
- * 
- * uni-app插件市场地址：
- * http://ext.dcloud.net.cn/plugin?id=271
- * 
- */
 
 // 主题颜色配置：如每个图表类型需要不同主题，请在对应图表类型上更改color属性
 const color = ['#1890FF', '#91CB74', '#FAC858', '#EE6666', '#73C0DE', '#3CA272', '#FC8452', '#9A60B4', '#ea7ccc'];
@@ -94,10 +77,230 @@ const cfu = {
     	},
     }
   },
+  
+  
+  "gauge":{
+    "type": "gauge",
+  },
+  
+ 
+  "scatter":{
+    "type": "scatter",
+  },
+  
+  
+  
+  
+  "tline":{
+      "type": "line",
+      "canvasId": "",
+      "canvas2d": false,
+      "background": "none",
+      "animation": true,
+      "timing": "easeOut",
+      "duration": 1000,
+      "color": [
+          "#1890FF",
+          "#91CB74",
+          "#FAC858",
+          "#ea7ccc",
+          "#73C0DE",
+          "#3CA272",
+          "#FC8452",
+          "#9A60B4",
+          
+      ],
+      "padding": [
+          15,
+          2,
+          0,
+          2
+      ],
+      "rotate": false,
+      "errorReload": true,
+      "fontSize": 13,
+      "fontColor": "#666666",
+      //"enableScroll": true,
+      "touchMoveLimit": 60,
+      "enableMarkLine": false,
+      "dataLabel": false,
+      "dataPointShape": true,
+      "dataPointShapeType": "solid",
+      "tapLegend": true,
+      "xAxis": {
+          "disabled": false,
+          "axisLine": true,
+          "axisLineColor": "#CCCCCC",
+          "calibration": false,
+          "fontColor": "#666666",
+          "fontSize": 13,
+          "rotateLabel": false,
+          "itemCount": 11,
+          "boundaryGap": "justify",
+          "disableGrid": true,
+          "gridColor": "#CCCCCC",
+          "gridType": "dash",
+          "dashLength": 4,
+          "gridEval": 1,
+          "scrollShow": true,
+          "scrollAlign": "left",
+          "scrollColor": "#A6A6A6",
+          "scrollBackgroundColor": "#EFEBEF",
+          "format": ""
+      },
+      "yAxis": {
+          "disabled": false,
+          "disableGrid": false,
+          "splitNumber": 5,
+          "gridType": "dash",
+          "dashLength": 2,
+          "gridColor": "#CCCCCC",
+          "padding": 10,
+          "showTitle": true,
+          "data": [
+              {
+                  "type": "value",
+                  "position": "left",
+                  "disabled": false,
+                  "axisLine": true,
+                  "axisLineColor": "#CCCCCC",
+                  "calibration": false,
+                  "fontColor": "#666666",
+                  "fontSize": 12,
+                  "textAlign": "right",
+                  "title": "NSPH",
+                  "titleFontSize": 12,
+                  "titleOffsetY": 0,
+                  "titleOffsetX": -5,
+                  "titleFontColor": "#666666",
+                  "min": null,
+                  "max": null,
+                  "tofix": null,
+                  "unit": "",
+                  "format": ""
+              },
+			  {
+			      "type": "value",
+			      "position": "left",
+			      "disabled": false,
+			      "axisLine": true,
+			      "axisLineColor": "#CCCCCC",
+			      "calibration": false,
+			      "fontColor": "#666666",
+			      "fontSize": 12,
+			      "textAlign": "right",
+			      "title": "Eta",
+			      "titleFontSize": 12,
+			      "titleOffsetY": 0,
+			      "titleOffsetX": -10,
+			      "titleFontColor": "#666666",
+			      "min": null,
+			      "max": null,
+			      "tofix": 0,
+			      "unit": "",
+			      "format": ""
+			  },
+              {
+                  "type": "value",
+                  "position": "right",
+                  "disabled": false,
+                  "axisLine": true,
+                  "axisLineColor": "#CCCCCC",
+                  "calibration": false,
+                  "fontColor": "#666666",
+                  "fontSize": 12,
+                  "textAlign": "right",
+                  "title": "P",
+                  "titleFontSize": 13,
+                  "titleOffsetY": 0,
+                  "titleOffsetX": 15,
+                  "titleFontColor": "#666666",
+                  "min": null,
+                  "max": null,
+                  "tofix": 1,
+                  "unit": "",
+                  "format": ""
+              },
+			  {
+			      "type": "value",
+			      "position": "right",
+			      "disabled": false,
+			      "axisLine": true,
+			      "axisLineColor": "#CCCCCC",
+			      "calibration": false,
+			      "fontColor": "#666666",
+			      "fontSize": 12,
+			      "textAlign": "right",
+			      "title": "H",
+			      "titleFontSize": 12,
+			      "titleOffsetY": 0,
+			      "titleOffsetX": 5,
+			      "titleFontColor": "#666666",
+			      "min": null,
+			      "max": null,
+			      "tofix": null,
+			      "unit": "",
+			      "format": ""
+			  }
+          ]
+      },
+      "legend": {
+          "show": true,
+          "position": "bottom",
+          "float": "center",
+          "padding": 5,
+          "margin": 5,
+          "backgroundColor": "rgba(0,0,0,0)",
+          "borderColor": "rgba(0,0,0,0)",
+          "borderWidth": 0,
+          "fontSize": 13,
+          "fontColor": "#666666",
+          "lineHeight": 11,
+          "hiddenColor": "#CECECE",
+          "itemGap": 10
+      },
+      "extra": {
+          "line": {
+              "type": "curve",
+              "width": 2
+          },
+          "tooltip": {
+              "showBox": true,
+              "showArrow": true,
+              "showCategory": false,
+              "borderWidth": 0,
+              "borderRadius": 0,
+              "borderColor": "#000000",
+              "borderOpacity": 0.7,
+              "bgColor": "#000000",
+              "bgOpacity": 0.7,
+              "gridType": "solid",
+              "dashLength": 4,
+              "gridColor": "#CCCCCC",
+              "fontColor": "#FFFFFF",
+              "splitLine": true,
+              "horizentalLine": false,
+              "xAxisLabel": false,
+              "yAxisLabel": false,
+              "labelBgColor": "#FFFFFF",
+              "labelBgOpacity": 0.7,
+              "labelFontColor": "#666666"
+          },
+          "markLine": {
+              "type": "solid",
+              "dashLength": 4,
+              "data": []
+          }
+      }
+  }
+  ,
+ 
   //下面是自定义配置，请添加项目所需的通用配置
+  
   "line":{
     "type": "line",
     "canvasId": "",
+"update":"true",
     "canvas2d": false,
     "background": "none",
     "animation": true,

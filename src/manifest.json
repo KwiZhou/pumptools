@@ -1,5 +1,5 @@
 {
-    "name" : "",
+    "name" : "pumptools",
     "appid" : "__UNI__511C026",
     "description" : "",
     "versionName" : "1.0.0",
@@ -54,10 +54,10 @@
     "quickapp" : {},
     /* 快应用特有相关 */
     "mp-weixin" : {
-        /* 微信小程序特有相关 */
         "appid" : "wxd2308b6613ae251c",
         "setting" : {
-            "urlCheck" : true
+            "urlCheck" : true,
+            "minified" : true
         },
         "usingComponents" : true
     },
@@ -72,5 +72,14 @@
     },
     "mp-qq" : {
         "usingComponents" : true
+    },
+    "h5" : {
+        "sdkConfigs" : {
+            "maps" : {
+                "qqmap" : {
+                    "key" : "YLBBZ-ETGHG-FRUQX-ILAOA-KLILH-OFF2E"
+                }
+            }
+        }
     }
 }

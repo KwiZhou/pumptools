@@ -2,7 +2,7 @@
 	<view class="calculatorHead">
 	  <view  class="title">
 	    <span class="iconfont icon-jisuanqi" ></span>
-	    <h4 >性能参数计算器</h4>
+	    <slot name="calculatorname"><h4>计算器</h4></slot>
 	  </view>
 	  <view class="synopsis"><slot name="synopsisText"></slot></view>
 	</view>

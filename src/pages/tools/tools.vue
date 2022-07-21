@@ -7,7 +7,13 @@
 		</view>
 	</view>
     <view class="right">
-      <toolsA />
+		
+		<!-- 子组件 toolsA 计算工具  -->
+      <toolsA v-if='curNav==1' />
+	  <!-- 子组件 toolsB 行业标准  -->
+	  <toolsB v-else-if='curNav==2'/>
+	  <!-- 子组件 toolsC 材质查询  -->
+	  <toolsC v-else/>
     </view>
   </view>
 </template>
@@ -53,7 +59,7 @@ export default {
 }
 .left {
   width: 200rpx;
-  background: linear-gradient(rgb(173, 221, 246), rgb(255, 255, 255))
+  
 }
 .left_item{
 	color: #939393;  ;
@@ -68,6 +74,6 @@ export default {
 }
 .right {
   flex: 1;
-  background: linear-gradient(rgb(173,216,230), rgb(255, 255, 255))
+
 }
 </style>

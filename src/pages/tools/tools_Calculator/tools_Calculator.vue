@@ -1,10 +1,15 @@
 <template>
 	<view class="xncs">
-
-		<calculatorHead />
+		<calculatorHead>
+			<template v-slot:calculatorname>
+				<h4>性能参数-计算器</h4>
+			</template>
+		</calculatorHead>
+		
 		<calculatorInput :calculatorinputclass="calculatorInputClass" @postInputValue="getInputValue" />
 		<button type="primary" @click="calculator">计算</button>
-		<calculatorOutput :calculatoroutputclass="calculatorOutputClass" :outputV="outputV" v-if="show"></calculatorOutput>
+		<calculatorOutput :calculatoroutputclass="calculatorOutputClass" :outputV="outputV" v-if="show">
+		</calculatorOutput>
 	</view>
 </template>
 
@@ -97,8 +102,8 @@
 					return
 				}
 				//正式开始计算
-				
-				let outputV=[]
+
+				let outputV = []
 				let output1 = 3.65 * this.input3V * Math.sqrt(this.input1V / 3600) / Math.pow(this.input2V,
 					0.75)
 				let output2 = ((1 + 0.0835 * Math.log10(Math.pow(this.input1V / 3600 / this.input3V, 1 / 3))))
@@ -108,7 +113,7 @@
 				let output6 = (this.input4V * 9.8 * this.input1V / 3600 * this.input2V / 1000 / output5)
 				let output7 = 1.2 * output6
 				let output8 = this.input2V / output2
-			
+
 				this.outputV = [
 						output1.toFixed(2), //比转速
 						(output2 * 100).toFixed(2) + " %", //水力效率ηh
@@ -119,9 +124,9 @@
 						output7.toFixed(2) + " kw", //原动机功率 Pg
 						output8.toFixed(2) + " m" //理论扬程 Ht
 					],
-					this.show=true
-			
-				
+					this.show = true
+
+
 			},
 
 			getInputValue(e) {
@@ -144,7 +149,7 @@
 					default:
 						break
 				}
-				
+
 			}
 
 		},
@@ -155,15 +160,14 @@
 </script>
 
 <style>
-	calculatorInput{
-		padding-bottom:130rpx;
+	calculatorInput {
+		padding-bottom: 130rpx;
 	}
-	button{
-		width:50%;
-		
+	
+	button {
+		width: 50%;
+		margin-top: 30rpx;
 	}
-	.xncs {
-		
 
-	}
+
 </style>

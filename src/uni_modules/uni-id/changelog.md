@@ -1,3 +1,6 @@
+## 3.3.13（2022-03-04）
+- createInstance方法支持传递clientInfo [详情](https://uniapp.dcloud.net.cn/uniCloud/uni-id.html#create-instance)
+- 修复`this.t is not a function`报错
 ## 3.3.12（2022-01-15）
 - 新增 preferedAppPlatform 配置用于解决uni-app vue2版本vue3版本获取platform不一致的问题 [详情](https://uniapp.dcloud.net.cn/uniCloud/uni-id?id=prefered-app-platform)
 - 修复 checkToken 未返回自定义token内容的Bug

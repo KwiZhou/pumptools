@@ -1,14 +1,18 @@
-{
+{"easycom": {
+      
+        "^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+        
+    },
 	
-	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+	"pages": [
 		{
             "path" : "pages/home/home",
             "style" :                                                                                    
             {
-                //"navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
+               
+			"navigationBarBackgroundColor": "#3F67F3"
             
+            }
         }
         ,{
             "path" : "pages/selection/selection",
@@ -23,6 +27,7 @@
             "path" : "pages/tools/tools",
             "style" :                                                                                    
             {
+				
                 "navigationBarTitleText": "小工具",
                 "enablePullDownRefresh": false
             }
@@ -32,6 +37,7 @@
             "path" : "pages/myself/myself",
             "style" :                                                                                    
             {
+					"navigationBarBackgroundColor": "#3F67F3",
                 "navigationBarTitleText": "我的",
                 "enablePullDownRefresh": false
             }
@@ -61,6 +67,146 @@
             "style" :                                                                                    
             {
                 "navigationBarTitleText": "计算器",
+                "enablePullDownRefresh": false,
+				"disableScroll": true
+				
+            }
+            
+        }
+        ,{
+            "path" : "pages/selection/productInfo/productInfo",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/tools/tools_CalculatorLineLoss/tools_CalculatorLineLoss",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/home/brandInfoPage/brandInfoPage",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/test/test",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/home/brandAndPumpList/brandAndPumpList",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/myself/updateLog/updateLog",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/myself/aboutPumpTools/aboutPumpTools",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "关于pumptools",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/selection/selectedPump/selectedPump",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/myself/dataArchiving/dataArchiving",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "振动数据记录",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/test2/test2",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+				"allowsBounceVertical": "NO",
+				"disableScroll": true
+            }
+            
+        }
+        ,{
+            "path" : "pages/myself/calculatorDataArchiving/calculatorDataArchiving",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "管道损失计算记录",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/test3/test3",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/tools/tools_noise/tools_noise",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "分贝仪",
+		//		"navigationBarBackgroundColor": "#fd92a4",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/myself/dataNoies/dataNoies",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "噪声数据历史记录",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/myself/dataNoies/noiseDataChart/noiseDataChart",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
                 "enablePullDownRefresh": false
             }
             

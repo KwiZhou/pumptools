@@ -1,67 +1,40 @@
 <template>
-	<view class="calculatorOutput">
-		<view class="line"></view>
-	
-		<template v-for="item in calculatoroutputclass">
-			<view class="OutputName">
-				<text >
-					{{item.name}}
-				</text>
-				<span>
-					{{outputV[item.id]}}
-				</span>
-			</view>
-			<view class="line"></view>
-		</template>
-	
+	<view class="totol">
+		<u-cell-group :border="true">
+			<template v-for="item in calculatoroutputclass">
+				<u-cell :border="true" :title="item.name">
+					<input :value="outputV[item.id]" disabled slot="right-icon" class="inputb"></input>
+				</u-cell>
+			</template>
+		</u-cell-group>
 	</view>
 </template>
 
 <script>
 	export default {
-		name:"calculatorOutput",
-		props:['calculatoroutputclass','outputV'],
+		name: "calculatorOutput",
+		props: ['calculatoroutputclass', 'outputV'],
 		data() {
 			return {
-				
+
 			};
 		},
-		
+		mounted() {
+			
+		}
+
 	}
 </script>
 
-<style>
-	.calculatorOutput{
-		padding-top: 50rpx;
-	}
-	.OutputName {
-		padding: 15rpx 0;
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		width: 70%;
-	}
-	
-	
-	.OutputName input{
-		padding-left:70rpx;
-	}
-	
-
-	.calculatorOutput {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		text-align: left;
+<style scoped>
+	.totol {
+		padding: 0 50rpx;
+		margin-top: 30rpx;
 	}
 
-	.line {
-		width: 100%;
-		background-color: grey;
-		opacity: 0.2;
-		height: 1rpx;
-		width: 80%;
-	
-
+	.inputb {
+		text-align: center;
+		padding: 8rpx;
+		border-radius: 8rpx;
 	}
 </style>

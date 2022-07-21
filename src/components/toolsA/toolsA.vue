@@ -33,7 +33,7 @@
 				children: [
 				  [{
 				    child_id: 1,
-				    name: "负载振动",
+				    name: "振动仪",
 				    iconclass: "iconfont icon-jiance-fuzaizhendong",
 				    url: "../../pages/tools/tools_Zd/tools_Zd",
 				  },
@@ -45,14 +45,16 @@
 				  }],
 				  [{
 				    child_id: 3,
-				    name: "水头损失",
+				    name: "管损计算",
 				    iconclass: "iconfont icon-bengzhan1",
-				    url: "../indexthreea-2/indexthreea-2",
+				    url: "../../pages/tools/tools_CalculatorLineLoss/tools_CalculatorLineLoss"
 				  },
 				  {
 				    child_id: 4,
-				    name: "楼宇供水",
+				    name: "分贝仪",
 				    iconclass: "iconfont icon-xiaofangbengfang",
+					url: "../../pages/tools/tools_noise/tools_noise"
+					
 				  }]
 				]
 			};

@@ -1,6 +1,6 @@
 <template>
-	<view>
-		选型
+	<view class="selction">
+	<selctionForm></selctionForm>
 	</view>
 </template>
 

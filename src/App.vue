@@ -1,4 +1,5 @@
 <script>
+	
 	export default {
 		data(){
 			return {
@@ -10,19 +11,32 @@
 			
 		},
 		onShow: function() {
-
+			uni.getStorage({
+				key: 'storage_userInfo',
+				success: function(res) {
+					
+					getApp().globalData.user=res.data.userinfo
+					getApp().globalData.hasUserInfo=true
+					getApp().globalData.g_openid=res.data.openid
+				}
+			})
 		},
 		onHide: function() {
 		
 		},
+		//getApp().globalData.isTarBarHright
 		globalData:{
-			//计算器页面的可用屏幕尺寸，由toolsZd传过来
-			pageHeight1:''
+			isTarBarHright:undefined,
+			noTarBarHright:undefined,
+			hasUserInfo:false,
+			user:null,
+			g_openid:undefined
 		}
 		
 	}
 </script>
 
-<style >
+<style lang="scss">
+	@import "uview-ui/index.scss";
 	
 </style>
